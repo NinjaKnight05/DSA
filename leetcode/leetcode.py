@@ -39,3 +39,13 @@
 
 #===================================================================================================================================================
 
+def remove_duplicates(nums):
+    l,r=0,1
+    while r< len(nums):
+        if nums[l]!=nums[r]:
+            l+=1
+            nums[l] = nums[r]
+        r+=1
+    return l+1
+nums = [1,1,2,2,3,3,4]
+print(remove_duplicates(nums))
