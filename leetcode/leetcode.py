@@ -39,13 +39,46 @@
 
 #===================================================================================================================================================
 
-def remove_duplicates(nums):
-    l,r=0,1
-    while r< len(nums):
-        if nums[l]!=nums[r]:
-            l+=1
-            nums[l] = nums[r]
-        r+=1
-    return l+1
-nums = [1,1,2,2,3,3,4]
-print(remove_duplicates(nums))
+# def remove_duplicates(nums):
+#     l,r=0,1
+#     while r< len(nums):
+#         if nums[l]!=nums[r]:
+#             l+=1
+#             nums[l] = nums[r]
+#         r+=1
+#     return l+1
+# nums = [1,1,2,2,3,3,4]
+# print(remove_duplicates(nums))
+
+# ===================================================================================================================================================
+# def plusOne(nums):
+#     for i in nums:
+#         if i == len(nums)-1:
+#             nums[i]+=1
+#             return nums
+#     return None
+# nums = [4,3,2,1]
+# print(plusOne(nums))
+
+# def plusOne(nums):
+#     for i in range(len(nums)-1,-1,-1):
+#         if nums[i]==9:
+#             nums[i]=0
+#         else:
+#             nums[i]+=1
+#             return nums
+#     nums.insert(0,1)
+#     return nums
+# nums = [9]
+# print(plusOne(nums))
+
+# def addition(nums):
+#     nums = int("".join(map(str,nums)))
+#     nums+=1
+#     return list(map(int, str(abs(nums))))
+# nums = [9]
+# print(addition(nums))
+
+#========================================================================================================================================================
+
+
