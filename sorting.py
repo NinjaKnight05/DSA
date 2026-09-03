@@ -21,17 +21,17 @@
 
 
 #sorting
-def bubble_Sort(arr):
-    n = len(arr)
-    for i in range(n):
-        swapped = False
-        for j in range(0,n-i-1):
-            if arr[j] < arr[j+1]:
-                arr[j],arr[j+1] = arr[j+1],arr[j]
-                swapped = True
-        if not swapped:
-         break
-    return arr
-arr = [1,3,5,4,6,2,8]
-print(bubble_Sort(arr))
+# def bubble_Sort(arr):
+#     n = len(arr)
+#     for i in range(n):
+#         swapped = False
+#         for j in range(0,n-i-1):
+#             if arr[j] < arr[j+1]:
+#                 arr[j],arr[j+1] = arr[j+1],arr[j]
+#                 swapped = True
+#         if not swapped:
+#          break
+#     return arr
+# arr = [1,3,5,4,6,2,8]
+# print(bubble_Sort(arr))
 

@@ -92,12 +92,12 @@
 # print(palindrome_twosome('level'))
 
 def move_zeroes(arr):
-    write = 0
+    num = 0
 
-    for read in range(len(arr)):
-        if arr[read] != 0:
-            arr[write], arr[read] = arr[read], arr[write]
-            write += 1
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[num], arr[i] = arr[i], arr[num]
+            num += 1
 
     return arr
 print(move_zeroes([1,5,0,4,7,2,0]))
