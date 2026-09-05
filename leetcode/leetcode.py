@@ -81,13 +81,37 @@
 
 #========================================================================================================================================================
 
-def movezeros(arr):
-    l,r=0,1
-    while r < len(arr):
-        if arr[l] ==0 and arr[r]!=0:
-            arr[l],arr[r] =arr[r],arr[l]
-            l+=1
-        r+=1
+# def movezeros(arr):
+#     l = 0
+#     while l < len(arr) and arr[l] != 0:
+#         l += 1
+#     r = l + 1
+#     while r < len(arr):
+#         if arr[r] != 0:
+#             arr[l], arr[r] = arr[r], arr[l]
+#             l += 1
+#         r += 1
+#     return arr
+# arr = [1, 0, 1]
+# arr2 = [0, 1, 0, 3, 12]
+# print(movezeros(arr))
+# print(movezeros(arr2))
+
+#================================================================================================================================================================
+
+def reverse(arr,):
+    l,r=0,3
+    while l < r:
+        arr[l],arr[r]=arr[r],arr[l]
+        l+=1
+        r-=1
     return arr
-arr = [1,0,1]
-print(movezeros(arr))
+arr=[1,2,3,4,5,6,7]
+print(reverse(arr))
+
+
+# def reverse(arr):
+#     arr = arr[::-1]
+#     return arr
+# arr=[1,2,3,4,5,6,7,8]
+# print(reverse(arr))
